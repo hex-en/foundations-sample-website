@@ -1,1 +1,1 @@
-from sample_website.website import app  # noqa: F401
+from color_check.website import app  # noqa: F401
