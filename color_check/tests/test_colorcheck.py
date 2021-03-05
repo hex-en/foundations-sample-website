@@ -2,14 +2,6 @@ from color_check.website import app
 from color_check.controllers.get_color_code import get_color_code
 
 
-def test_get_color_code():
-    assert get_color_code("red") == "#ff0000"
-
-# our very first functional test
-# instead of checking if a function() does it's job alone, this will check
-# the entire response from the flask app, including the http status code.
-
-
 def test_index():
     with app.test_client() as test_client:
         # mimic a browser: 'GET /', as if you visit the site
